@@ -1,0 +1,27 @@
+*, 
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+	display: table;
+	content: '';
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+body {
+	font-family: ;
+	background: #252323;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100vw;
+}
