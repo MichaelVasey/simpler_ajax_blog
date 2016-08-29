@@ -7,18 +7,59 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header id="main-header" class="main-header">
-			<div>
+			<div id="main-header-banner" class="main-header-banner">
+				<div id="main-header-content" class="main-header-content">
+					<h1 id="main-header-title">a simpler blog</h1>
+					<div class="main-header-social">
+						<nav>
+							<ul>
+								<li><span><i class="fa fa-"></i></span></li>
+								<li><span><i class="fa fa-"></i></span></li>
+								<li><span><i class="fa fa-"></i></span></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
-			<div class="posts-container">
+			<div id="posts-container" class="posts-container">
+				<article class="post">
+					<header class="post-header">
+						<h2>Lorem ipsum dolor sitja amet</h2>
+						<span><date>Tuesday 5th July 2016</date></span>
+					</header>
+					<div class="post-content">
+						<p>Lorem ipsum dolor sitja amet, consectetur adipiscing Elit. Rekja í risus sollicitudin consectetur tristique Úti. Cras luctus Hata Starfsmaður, Hætta svarað Elit non, Höfundur ipsum. Present fyrrverandi turpis, Monitoring et Acrylic ultricies Vitae, rutrum id nú. Það hafði áður verið, consequat quis Hvernig á, þáttur verði nú. Cras ultrices turpis ur míl varius, í a breiður svið risus rutrum. Sem hann getur ekki lectus ótalin metus Mollis Porta. Maecenas laoreet Libero. En auðvitað, Landamerki Felis ekki birt vestibulum. Acrylic a breiður svið a, fyrri til að prótein. Vestibulum dignissim augue Eget placerat congue. Duis nisl orci, ekki fyrir framan hálsi, molestie ultricies Ante. En aðalatriðið. Allir að meðlimir samkeppni. Á verði sodales pharetra Justo vitae DUI. Vestibulum Ante Forsíða primis í faucibus orci luctus et ultrices Fyrirspurnir Eget Diam;
+						</p>
+						<p>Einhver eða verð tags. Hver fótbolta drekka NIBH. Acrylic rutrum lectus Eget, lobortis Hvernig id, faucibus neque. En mikill tími til að spara drekka. A Tellus consectetur tincidunt Sed Tempus Rekja. Pellentesque metus Nisi, augue í cursus et, fermentum molestie Leo. En það er ekki eina Lorem feugiat lægsta verð. Pellentesque Snælda Ipsum which, sem höfundur sósu á. Ut Fringilla imperdiet míl, id tempor risus vehicula blandit. Í blandit eros Úti, en með endana og augur Maximus. Nulla á við barn með, eu bibendum Elit. Machine laoreet orci ut er stundum mikilvægt. Maecenas, en það er ókeypis.
+						</p>
+					</div>
+					<footer class="post-footer clearfix">
+						<div class="post-footer-left">
+							<span>Like this post</span><span><i></i></span>
+						</div>
+						<div class="post-footer-right">
+							<span>Read more...</span>
+						</div>
+					</footer>
+				</article>
 			</div>
 		</main>
 	</div>
+	<button id="next-posts" class="next-posts">
+		<span>Earlier<br>posts</span>
+		<span><i class="fa fa-paperclip"></i></span>
+	</button>
+	<script src="js/main.js"></script>
 </body>
 </html>

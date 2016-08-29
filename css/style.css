@@ -18,10 +18,157 @@
 }
 
 body {
-	font-family: ;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 100%;
 	background: #252323;
 	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	width: 100vw;
 }
+
+.wrapper {
+	width: 100%;
+}
+
+.main-header {
+	height: 100vh;
+	width: 100%;
+	background: #fff;
+}
+
+.main-header-banner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.main-header-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.main-header-content h1 {
+	font-family: 'Amatic SC', cursive;
+}
+
+.main-header-content h1 {
+	font-size: 4em;
+	color: #252323;
+}
+
+main {
+	width: 100%;
+}
+
+.posts-container {
+	width: 80%;
+	margin: 50px auto;
+}
+
+.post {
+	padding: 20px;
+}
+
+.post-header {
+	margin-bottom: 20px;
+	padding: 20px;
+	font-size: 1.5em;
+	color: #252323;
+	background: #fff;
+}
+.post h2 {
+
+}
+
+.post-content {
+	font-size: 1.3em;
+}
+
+.post-content p:not(:first-child) {
+	margin-top: 1.2em;
+}
+
+.post-footer {
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+.post-footer-left {
+	float: left;
+}
+
+.post-footer-right {
+	float: right;
+}
+
+.next-posts {
+	position: fixed;
+	height: 75px;
+	width: 75px;
+	overflow: hidden;
+	left: 50%;
+	bottom: 15px;
+	transform: translateX(-50%);
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.3);
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	transition: color 0.5s, background 0.5s, opacity 0.5s, visibility 0s linear 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.next-posts.show {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	transition-delay: 0s;
+}
+
+.next-posts:hover {
+	color: #252323;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.next-posts span {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: transform 0.4s;
+}
+
+.next-posts span:first-child {
+	padding-top: 10px;
+}
+
+.next-posts span:nth-child(2) {
+	font-size: 1.8em;
+	line-height: 75px;
+	top: -100%;
+}
+
+.next-posts:hover span {
+	transform: translate3d(0, 100%, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
